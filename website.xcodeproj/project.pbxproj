@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		4C1932E616E3D9940081E2C3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C1932E516E3D9940081E2C3 /* main.c */; };
 		4C1932E816E3D9940081E2C3 /* website.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4C1932E716E3D9940081E2C3 /* website.1 */; };
+		4C1932EF16E3D9BF0081E2C3 /* main.inputManager.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C1932EE16E3D9BF0081E2C3 /* main.inputManager.c */; };
+		4C1932F216E402E70081E2C3 /* main.inputManager.getValue.validate.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C1932F116E402E70081E2C3 /* main.inputManager.getValue.validate.c */; };
+		4C1932F416E403F20081E2C3 /* main.inputManager.getValue.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C1932F316E403F20081E2C3 /* main.inputManager.getValue.c */; };
+		4CB2911F16E541750089698F /* main.inputManager.getValue.readField.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2911E16E541750089698F /* main.inputManager.getValue.readField.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +32,11 @@
 		4C1932E116E3D9940081E2C3 /* website */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = website; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1932E516E3D9940081E2C3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		4C1932E716E3D9940081E2C3 /* website.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = website.1; sourceTree = "<group>"; };
+		4C1932EE16E3D9BF0081E2C3 /* main.inputManager.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.inputManager.c; sourceTree = "<group>"; };
+		4C1932F016E3DA0B0081E2C3 /* header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = header.h; sourceTree = "<group>"; };
+		4C1932F116E402E70081E2C3 /* main.inputManager.getValue.validate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.inputManager.getValue.validate.c; sourceTree = "<group>"; };
+		4C1932F316E403F20081E2C3 /* main.inputManager.getValue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.inputManager.getValue.c; sourceTree = "<group>"; };
+		4CB2911E16E541750089698F /* main.inputManager.getValue.readField.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.inputManager.getValue.readField.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +70,11 @@
 			isa = PBXGroup;
 			children = (
 				4C1932E516E3D9940081E2C3 /* main.c */,
+				4C1932F016E3DA0B0081E2C3 /* header.h */,
+				4C1932EE16E3D9BF0081E2C3 /* main.inputManager.c */,
+				4C1932F116E402E70081E2C3 /* main.inputManager.getValue.validate.c */,
+				4CB2911E16E541750089698F /* main.inputManager.getValue.readField.c */,
+				4C1932F316E403F20081E2C3 /* main.inputManager.getValue.c */,
 				4C1932E716E3D9940081E2C3 /* website.1 */,
 			);
 			path = website;
@@ -118,6 +132,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C1932E616E3D9940081E2C3 /* main.c in Sources */,
+				4C1932EF16E3D9BF0081E2C3 /* main.inputManager.c in Sources */,
+				4C1932F216E402E70081E2C3 /* main.inputManager.getValue.validate.c in Sources */,
+				4C1932F416E403F20081E2C3 /* main.inputManager.getValue.c in Sources */,
+				4CB2911F16E541750089698F /* main.inputManager.getValue.readField.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +224,7 @@
 				4C1932ED16E3D9940081E2C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
