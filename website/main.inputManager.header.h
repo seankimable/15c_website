@@ -130,7 +130,7 @@ bool promptExit(void);
 int getUserSelection(input_type type, const char *msg);
 char* getFilename(input_type type, const char *msg);
 char* readOneLine(FILE* fPtr);
-void* readSingleField(input_type type, char *usSingleLine);
+void* readSingleField(input_type type, char **line);
 
 //project.main.managers.inputManager.validate
 int validateInput(input_type type, char* usInput);

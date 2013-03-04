@@ -1,12 +1,4 @@
-//
-//  main.inputManager.getValue.readField.c
-//  website
-//
-//  Created by Anonymous on 3/4/13.
-//  Copyright (c) 2013 Anonymous. All rights reserved.
-//
-
-#include "header.h"
+#include "main.inputManager.header.h"
 char* readOneLine(FILE* fPtr) {
 	int numCharRead = 0;                    // number of characters read
 	char usBuffer[MAX_LENGTH_INPUT];        // unsafe buffer  string
@@ -39,23 +31,23 @@ char* readOneLine(FILE* fPtr) {
 }
 
 
-void* readSingleField(input_type type, char *line) {
+void* readSingleField(input_type type, char **line) {
     char *usField;        // unsafe field string (processed from `line`)
     char *loc;
     int i;
     
-    loc = strchr(line,';');
+    loc = strchr(*line, ';');
     
-    VS("readSingleField.line: %s\n", line);
+    VS("readSingleField.line:_%s_\n", *line);
     
     MALLOC(usField);
     
-    for(i = 0; i < loc - line; i++) {
-        usField[i] = line[i];
+    for(i = 0; i < loc - *line; i++) {
+        usField[i] = (*line)[i];
     }
     
-    line = loc;
-    VS("readSingleField.usField:_%s_\n", usField);
+    *line = loc + 1;
+    VS("usField:_%s_\n", usField);
     
     return INPUT_VALUE_VALID == validateInput(type, usField) ? usField : NULL;
 }

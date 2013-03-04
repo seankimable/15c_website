@@ -33,7 +33,7 @@
 		4C1932E516E3D9940081E2C3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		4C1932E716E3D9940081E2C3 /* website.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = website.1; sourceTree = "<group>"; };
 		4C1932EE16E3D9BF0081E2C3 /* main.inputManager.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.inputManager.c; sourceTree = "<group>"; };
-		4C1932F016E3DA0B0081E2C3 /* header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = header.h; sourceTree = "<group>"; };
+		4C1932F016E3DA0B0081E2C3 /* main.inputManager.header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.inputManager.header.h; sourceTree = "<group>"; };
 		4C1932F116E402E70081E2C3 /* main.inputManager.getValue.validate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.inputManager.getValue.validate.c; sourceTree = "<group>"; };
 		4C1932F316E403F20081E2C3 /* main.inputManager.getValue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.inputManager.getValue.c; sourceTree = "<group>"; };
 		4CB2911E16E541750089698F /* main.inputManager.getValue.readField.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.inputManager.getValue.readField.c; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				4C1932E516E3D9940081E2C3 /* main.c */,
-				4C1932F016E3DA0B0081E2C3 /* header.h */,
+				4C1932F016E3DA0B0081E2C3 /* main.inputManager.header.h */,
 				4C1932EE16E3D9BF0081E2C3 /* main.inputManager.c */,
 				4C1932F116E402E70081E2C3 /* main.inputManager.getValue.validate.c */,
 				4CB2911E16E541750089698F /* main.inputManager.getValue.readField.c */,

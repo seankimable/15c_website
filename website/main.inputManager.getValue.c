@@ -1,12 +1,4 @@
-//
-//  prompt.c
-//  website
-//
-//  Created by Anonymous on 3/3/13.
-//  Copyright (c) 2013 Anonymous. All rights reserved.
-//
-
-#include "header.h"
+#include "main.inputManager.header.h"
 
 int getUserSelection(input_type type, const char *msg) {
 	char usInput[MAX_LENGTH_INPUT];
@@ -120,9 +112,9 @@ Website* getValidatedInput(FILE* fPtr) {
     VS("safesingline:_%s_\n", usLine);
     
 	// set: fields in `curWebsite`
-    sUrl = (char*) readSingleField(INPUT_TYPE_URL, usLine);
-    sCompany = (char*) readSingleField(INPUT_TYPE_URL, usLine);
-    sDailyPageView = (int) readSingleField(INPUT_TYPE_URL, usLine);
+    sUrl = (char*) readSingleField(INPUT_TYPE_URL, &usLine);
+    sCompany = (char*) readSingleField(INPUT_TYPE_URL, &usLine);
+    sDailyPageView = (int) readSingleField(INPUT_TYPE_URL, &usLine);
     sRankTraffic = (int) readSingleField(INPUT_TYPE_URL, usLine);
     sBackLink = (int) readSingleField(INPUT_TYPE_URL, usLine);
     sWebsiteWorth = (int) readSingleField(INPUT_TYPE_URL, usLine);

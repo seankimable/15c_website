@@ -1,5 +1,4 @@
-#include "header.h"
-
+#include "main.inputManager.header.h"
 
 Website* inputManager(void) {
     Website* curWebsite = NULL;

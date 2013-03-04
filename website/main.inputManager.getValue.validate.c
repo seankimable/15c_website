@@ -1,12 +1,4 @@
-//
-//  validate.c
-//  website
-//
-//  Created by Anonymous on 3/3/13.
-//  Copyright (c) 2013 Anonymous. All rights reserved.
-//
-
-#include "header.h"
+#include "main.inputManager.header.h"
 
 #define DELIMITER_URL "./"
 
