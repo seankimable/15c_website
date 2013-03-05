@@ -17,7 +17,7 @@ char* readOneLine(FILE* fPtr) {
 	}
     
 	// exclude: delimiter from bufferString
-	usBuffer[numCharRead - 1] = '\0';
+	usBuffer[numCharRead] = '\0';
     
 	// dynamically allocate: bufferString
 	sBuffer = malloc(strlen(usBuffer) + 1);
@@ -35,20 +35,23 @@ void* readSingleField(input_type type, char **line) {
     char *usField;        // unsafe field string (processed from `line`)
     char *loc;
     int i;
-    
-    loc = strchr(*line, ';');
-    
-    VS("readSingleField.line:_%s_\n", *line);
-    
+
     MALLOC(usField);
-    
+    // locate: delimiter
+    loc = strchr(*line, DELIMITER_SEMICOLON);
+   
     for(i = 0; i < loc - *line; i++) {
         usField[i] = (*line)[i];
     }
     
     *line = loc + 1;
-    VS("usField:_%s_\n", usField);
-    
-    return INPUT_VALUE_VALID == validateInput(type, usField) ? usField : NULL;
+
+    if (INPUT_VALUE_VALID == validateInput(type, usField)) {
+        return usField;
+    } else {
+        // free: invalid field read
+        free(usField);
+        return NULL;
+    }
 }
 

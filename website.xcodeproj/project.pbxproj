@@ -12,7 +12,7 @@
 		4C1932EF16E3D9BF0081E2C3 /* main.inputManager.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C1932EE16E3D9BF0081E2C3 /* main.inputManager.c */; };
 		4C1932F216E402E70081E2C3 /* main.inputManager.getValue.validate.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C1932F116E402E70081E2C3 /* main.inputManager.getValue.validate.c */; };
 		4C1932F416E403F20081E2C3 /* main.inputManager.getValue.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C1932F316E403F20081E2C3 /* main.inputManager.getValue.c */; };
-		4CB2911F16E541750089698F /* main.inputManager.getValue.readField.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2911E16E541750089698F /* main.inputManager.getValue.readField.c */; };
+		4CB2911F16E541750089698F /* main.inputManager.getValue.read.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2911E16E541750089698F /* main.inputManager.getValue.read.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,7 +36,7 @@
 		4C1932F016E3DA0B0081E2C3 /* main.inputManager.header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.inputManager.header.h; sourceTree = "<group>"; };
 		4C1932F116E402E70081E2C3 /* main.inputManager.getValue.validate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.inputManager.getValue.validate.c; sourceTree = "<group>"; };
 		4C1932F316E403F20081E2C3 /* main.inputManager.getValue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.inputManager.getValue.c; sourceTree = "<group>"; };
-		4CB2911E16E541750089698F /* main.inputManager.getValue.readField.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.inputManager.getValue.readField.c; sourceTree = "<group>"; };
+		4CB2911E16E541750089698F /* main.inputManager.getValue.read.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.inputManager.getValue.read.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 				4C1932F016E3DA0B0081E2C3 /* main.inputManager.header.h */,
 				4C1932EE16E3D9BF0081E2C3 /* main.inputManager.c */,
 				4C1932F116E402E70081E2C3 /* main.inputManager.getValue.validate.c */,
-				4CB2911E16E541750089698F /* main.inputManager.getValue.readField.c */,
+				4CB2911E16E541750089698F /* main.inputManager.getValue.read.c */,
 				4C1932F316E403F20081E2C3 /* main.inputManager.getValue.c */,
 				4C1932E716E3D9940081E2C3 /* website.1 */,
 			);
@@ -135,7 +135,7 @@
 				4C1932EF16E3D9BF0081E2C3 /* main.inputManager.c in Sources */,
 				4C1932F216E402E70081E2C3 /* main.inputManager.getValue.validate.c in Sources */,
 				4C1932F416E403F20081E2C3 /* main.inputManager.getValue.c in Sources */,
-				4CB2911F16E541750089698F /* main.inputManager.getValue.readField.c in Sources */,
+				4CB2911F16E541750089698F /* main.inputManager.getValue.read.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

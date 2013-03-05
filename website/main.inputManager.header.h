@@ -36,9 +36,10 @@ typedef enum {
 #define V(str) if(DEBUG) printf(str);
 
 // constant.defined
-#define HR  "\n================================================\n\n"
+#define HR  "================================================\n"
 #define BR  "\n"
 #define MSG_EXIT_SELECTION "Enter \"I\" to ignore once, \"A\" to ignore all, or \"Q\" to quit program\n"
+#define FLUSH while (getchar() != '\n');
 #define FILENAME_SOURCE                 "hobbies.txt"
 #define FILEMODE_READONLY               "r"
 #define MAX_LENGTH_INPUT                255

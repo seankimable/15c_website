@@ -86,41 +86,62 @@ Website* getValidatedInput(FILE* fPtr) {
 	Website* curWebsite;            // current `struct Website`
 	char *sUrl;
 	char *sCompany;
-    int sDailyPageView;
-    int sRankTraffic;
-    int sBackLink;
-    int sWebsiteWorth;
+	char *sDailyPageView;
+	char *sRankTraffic;
+	char *sBackLink;
+	char *sWebsiteWorth;
+	bool bContinue = true;
 	/*
 	 * `char *usLine;`
 	 * unsafe single line read
 	 * (may not represent original value)
 	 */
-    char *usLine = NULL;              // safe single line read
-    char *sLine = NULL;
-
+	char *usLine = NULL;
+	char *sLine = NULL;              // safe single line read
+    
 	MALLOC(curWebsite);
 	usLine = readOneLine(fPtr);
     
-	
 	if (NULL == usLine) { /* reached: EOF of input file */
-        VS("%s_sSingleLine is NULL", usLine);
-        return NULL;
+		VS("%s_sSingleLine is NULL", usLine);
+		return NULL;
 	} else {
-        sLine = usLine;
-    }
-    
-    VS("safesingline:_%s_\n", usLine);
+		sLine = usLine;
+	}
     
 	// set: fields in `curWebsite`
-    sUrl = (char*) readSingleField(INPUT_TYPE_URL, &usLine);
-    sCompany = (char*) readSingleField(INPUT_TYPE_URL, &usLine);
-    sDailyPageView = (int) readSingleField(INPUT_TYPE_URL, &usLine);
-    sRankTraffic = (int) readSingleField(INPUT_TYPE_URL, usLine);
-    sBackLink = (int) readSingleField(INPUT_TYPE_URL, usLine);
-    sWebsiteWorth = (int) readSingleField(INPUT_TYPE_URL, usLine);
+	sUrl = (char*) readSingleField(INPUT_TYPE_URL, &usLine);
+	sCompany = (char*) readSingleField(INPUT_TYPE_URL, &usLine);
+	sDailyPageView = (char*) readSingleField(INPUT_TYPE_URL, &usLine);
+	sRankTraffic = (char*) readSingleField(INPUT_TYPE_URL, &usLine);
+	sBackLink = (char*) readSingleField(INPUT_TYPE_URL, &usLine);
+	sWebsiteWorth = (char*) readSingleField(INPUT_TYPE_URL, &usLine);
     
-    printf("%s_%s_%d_%d_%d_%d\n", sUrl, sCompany, sDailyPageView, sRankTraffic, sBackLink,
-           sWebsiteWorth);
+	while (bContinue && NULL != sUrl && NULL != sCompany
+           && NULL != sDailyPageView && NULL != sRankTraffic
+           && NULL != sBackLink && NULL != sWebsiteWorth) {
+		curWebsite->url = sUrl;
+        
+		curWebsite->company = sCompany;
+		curWebsite->dailyPageViewThousands = atoi(sDailyPageView);
+		curWebsite->rankTraffic = atoi(sRankTraffic);
+		curWebsite->backLinkThousands = atoi(sBackLink);
+		curWebsite->websiteWorthThousands = atoi(sWebsiteWorth);
+		free(sDailyPageView);
+		free(sRankTraffic);
+		free(sBackLink);
+		free(sWebsiteWorth);
+		bContinue = false;
+	}
     
-    return curWebsite;
+	free(sLine);
+    
+	// debug: print `curWebsite`
+	printf(HR);
+	printf("`curWebsite` fields:\n");
+	printf("%s\n%s\n%d\n%d\n%d\n%d\n", curWebsite->url, curWebsite->company,
+           curWebsite->dailyPageViewThousands, curWebsite->rankTraffic,
+           curWebsite->backLinkThousands, curWebsite->websiteWorthThousands);
+	printf(HR);
+	return curWebsite;
 }

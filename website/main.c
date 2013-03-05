@@ -7,7 +7,7 @@
 //
 
 #include <stdio.h>
-#include "header.h"
+#include "main.inputManager.header.h"
 
 int main(int argc, const char * argv[])
 {
