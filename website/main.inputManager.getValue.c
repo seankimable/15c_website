@@ -103,7 +103,6 @@ Website* getValidatedInput(FILE* fPtr) {
 	usLine = readOneLine(fPtr);
     
 	if (NULL == usLine) { /* reached: EOF of input file */
-		VS("%s_sSingleLine is NULL", usLine);
 		return NULL;
 	} else {
 		sLine = usLine;

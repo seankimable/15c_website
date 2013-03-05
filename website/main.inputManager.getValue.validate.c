@@ -11,7 +11,7 @@ int validateInput(input_type type, char* usInput) {
     
     // set: unsafe input buffer string
     if (NULL== usInput) {
-        V("usInput is null\n");
+        // usInput Error
     }
     strcpy(usInputBuffer, usInput);
     len = strlen(usInput);

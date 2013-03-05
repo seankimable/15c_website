@@ -30,11 +30,6 @@ typedef enum {
     INPUT_VALUE_QUIT = 5
 } input_value;
 
-// constant.defined.debug
-#define DEBUG true
-#define VS(str,value) if(DEBUG) printf(str, value);
-#define V(str) if(DEBUG) printf(str);
-
 // constant.defined
 #define HR  "================================================\n"
 #define BR  "\n"

@@ -3,7 +3,6 @@ char* readOneLine(FILE* fPtr) {
 	int numCharRead = 0;                    // number of characters read
 	char usBuffer[MAX_LENGTH_INPUT];        // unsafe buffer  string
 	char *sBuffer;                           // safe buffer string
-	char *pBufferString;                    // pointer to buffer string
     
 	// read: until linebreak or EOF is read
 	usBuffer[numCharRead] = fgetc(fPtr);
