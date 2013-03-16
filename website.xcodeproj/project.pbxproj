@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		4C1932E616E3D9940081E2C3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C1932E516E3D9940081E2C3 /* main.c */; };
 		4C1932E816E3D9940081E2C3 /* website.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4C1932E716E3D9940081E2C3 /* website.1 */; };
-		4C1932EF16E3D9BF0081E2C3 /* main.inputManager.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C1932EE16E3D9BF0081E2C3 /* main.inputManager.c */; };
-		4C1932F216E402E70081E2C3 /* main.inputManager.getValue.validate.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C1932F116E402E70081E2C3 /* main.inputManager.getValue.validate.c */; };
-		4C1932F416E403F20081E2C3 /* main.inputManager.getValue.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C1932F316E403F20081E2C3 /* main.inputManager.getValue.c */; };
-		4CB2911F16E541750089698F /* main.inputManager.getValue.read.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2911E16E541750089698F /* main.inputManager.getValue.read.c */; };
+		4C276B5116F41FAF001A474C /* main.FileManager.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C276B4F16F41FAF001A474C /* main.FileManager.c */; };
+		4C276B5316F42E3D001A474C /* main.SingleWebsiteManager.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C276B5216F42E3D001A474C /* main.SingleWebsiteManager.c */; };
+		4C276B5516F43091001A474C /* main.ValidateManager.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C276B5416F43091001A474C /* main.ValidateManager.c */; };
+		4C875AB116ED3DFE000D509E /* main.MenuManager.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C875AB016ED3DFE000D509E /* main.MenuManager.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,11 +32,11 @@
 		4C1932E116E3D9940081E2C3 /* website */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = website; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1932E516E3D9940081E2C3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		4C1932E716E3D9940081E2C3 /* website.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = website.1; sourceTree = "<group>"; };
-		4C1932EE16E3D9BF0081E2C3 /* main.inputManager.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.inputManager.c; sourceTree = "<group>"; };
-		4C1932F016E3DA0B0081E2C3 /* main.inputManager.header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.inputManager.header.h; sourceTree = "<group>"; };
-		4C1932F116E402E70081E2C3 /* main.inputManager.getValue.validate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.inputManager.getValue.validate.c; sourceTree = "<group>"; };
-		4C1932F316E403F20081E2C3 /* main.inputManager.getValue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.inputManager.getValue.c; sourceTree = "<group>"; };
-		4CB2911E16E541750089698F /* main.inputManager.getValue.read.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.inputManager.getValue.read.c; sourceTree = "<group>"; };
+		4C276B4F16F41FAF001A474C /* main.FileManager.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.FileManager.c; sourceTree = "<group>"; };
+		4C276B5016F41FAF001A474C /* main.header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.header.h; sourceTree = "<group>"; };
+		4C276B5216F42E3D001A474C /* main.SingleWebsiteManager.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.SingleWebsiteManager.c; sourceTree = "<group>"; };
+		4C276B5416F43091001A474C /* main.ValidateManager.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.ValidateManager.c; sourceTree = "<group>"; };
+		4C875AB016ED3DFE000D509E /* main.MenuManager.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.MenuManager.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +70,11 @@
 			isa = PBXGroup;
 			children = (
 				4C1932E516E3D9940081E2C3 /* main.c */,
-				4C1932F016E3DA0B0081E2C3 /* main.inputManager.header.h */,
-				4C1932EE16E3D9BF0081E2C3 /* main.inputManager.c */,
-				4C1932F116E402E70081E2C3 /* main.inputManager.getValue.validate.c */,
-				4CB2911E16E541750089698F /* main.inputManager.getValue.read.c */,
-				4C1932F316E403F20081E2C3 /* main.inputManager.getValue.c */,
+				4C276B4F16F41FAF001A474C /* main.FileManager.c */,
+				4C276B5016F41FAF001A474C /* main.header.h */,
+				4C276B5416F43091001A474C /* main.ValidateManager.c */,
+				4C875AB016ED3DFE000D509E /* main.MenuManager.c */,
+				4C276B5216F42E3D001A474C /* main.SingleWebsiteManager.c */,
 				4C1932E716E3D9940081E2C3 /* website.1 */,
 			);
 			path = website;
@@ -132,10 +132,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C1932E616E3D9940081E2C3 /* main.c in Sources */,
-				4C1932EF16E3D9BF0081E2C3 /* main.inputManager.c in Sources */,
-				4C1932F216E402E70081E2C3 /* main.inputManager.getValue.validate.c in Sources */,
-				4C1932F416E403F20081E2C3 /* main.inputManager.getValue.c in Sources */,
-				4CB2911F16E541750089698F /* main.inputManager.getValue.read.c in Sources */,
+				4C875AB116ED3DFE000D509E /* main.MenuManager.c in Sources */,
+				4C276B5116F41FAF001A474C /* main.FileManager.c in Sources */,
+				4C276B5316F42E3D001A474C /* main.SingleWebsiteManager.c in Sources */,
+				4C276B5516F43091001A474C /* main.ValidateManager.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
